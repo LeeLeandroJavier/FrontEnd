@@ -1,0 +1,33 @@
+<section class="educacion d-grid align-content-center align-items-center seccion">
+    <div class="educacionfoto">
+        <div class="d-flex justify-content-center align-items-center align-text-center">
+            <div>
+                <h2 class="titulo">Educación</h2>
+            </div>
+            <div class="d-flex" routerLink="/nuevaedu" *ngIf="isLogged">
+                <svg class="editar agregar" xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                    <path class="editaragregar" d="M696 480H544V328c0-4.4-3.6-8-8-8h-48c-4.4 0-8 3.6-8 8v152H328c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h152v152c0 4.4 3.6 8 8 8h48c4.4 0 8-3.6 8-8V544h152c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8z"/>
+                    <path class="editaragregar" d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372s372 166.6 372 372s-166.6 372-372 372z"/></svg>
+            </div>
+        </div>
+        <img src="../../../assets/educacionfotovector.png" class="img-fluid vector" alt="">
+    </div>
+    <div class="educaciontexto">
+        <ul>
+            <li *ngFor="let Educacion of educacion">
+                <div class="d-flex justify-content-center align-items-center align-text-center">
+                    <div>
+                        <h3 class="subtitulo">{{Educacion.nombreE}}</h3>
+                        <p>{{Educacion.descripcionE}}</p>
+                    </div>
+                    <div>
+                        <svg class="editar" *ngIf="isLogged" routerLink="/editedu/{{Educacion.id}}" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
+                            <path class="editarlapiz" d="m199.04 672.64l193.984 112l224-387.968l-193.92-112l-224 388.032zm-23.872 60.16l32.896 148.288l144.896-45.696L175.168 732.8zM455.04 229.248l193.92 112l56.704-98.112l-193.984-112l-56.64 98.112zM104.32 708.8l384-665.024l304.768 175.936L409.152 884.8h.064l-248.448 78.336L104.32 708.8zm384 254.272v-64h448v64h-448z"/></svg>
+                        <svg class="editar" *ngIf="isLogged" (click)="delete(Educacion.id)" xmlns="http://www.w3.org/2000/svg" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                            <path class="editartacho" fill="white" d="M7 3h2a1 1 0 0 0-2 0ZM6 3a2 2 0 1 1 4 0h4a.5.5 0 0 1 0 1h-.564l-1.205 8.838A2.5 2.5 0 0 1 9.754 15H6.246a2.5 2.5 0 0 1-2.477-2.162L2.564 4H2a.5.5 0 0 1 0-1h4Zm1 3.5a.5.5 0 0 0-1 0v5a.5.5 0 0 0 1 0v-5ZM9.5 6a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0v-5a.5.5 0 0 1 .5-.5Zm-4.74 6.703A1.5 1.5 0 0 0 6.246 14h3.508a1.5 1.5 0 0 0 1.487-1.297L12.427 4H3.573l1.187 8.703Z"/></svg>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>

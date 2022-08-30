@@ -1,0 +1,82 @@
+#logoAP{
+    width: 150px;
+}
+img{
+    width: 50px;
+}
+nav{
+    background: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+}
+.navbar{    
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    padding:10px 0;
+}
+
+
+a{
+    color: #fff !important;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+a:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+button{
+    border: 1px solid #fff;
+}
+button:hover{
+    transform:scale(1.10);
+}
+.login{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.nav-link{
+    padding: 0;
+}
+.redes a{
+    margin-right: 15px;
+}
+.redes a img:hover{
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+.redes{
+ align-self: end;
+}
+
+
+/*----------------------------------------*/
+
+
+.btn {
+    border-width:2px;
+    height: 50px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #ffffff;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #fff;
+  }
+  
+  .btn:hover {
+    stroke-dashoffset: -480;
+  }
+  
+

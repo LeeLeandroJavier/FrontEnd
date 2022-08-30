@@ -1,0 +1,82 @@
+.habilidades{
+    display: grid;
+    grid-template-areas: 
+    "habilidadesfoto habilidadescircle";
+    grid-template-rows: 100%;
+    grid-template-columns: minmax(300px, 1fr) 1fr;
+}
+
+.habilidadescircle{
+    grid-area: habilidadescircle;
+    align-self: center;
+    justify-self: end;
+    text-align: center;
+    margin-top:100px;
+    padding-left: 20px;
+    padding-right: 200px;
+    
+}
+
+
+.habilidadesfoto{
+    grid-area:habilidadesfoto;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    
+}
+
+@media(max-width: 1199px){
+    .habilidades {
+        display: flex !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .vector{
+        display: flex !important;
+        object-fit:cover;
+        margin-top: 0 !important;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .habilidadescircle{
+        display: flex !important;
+        flex-wrap:wrap;
+        align-self: center;
+        text-align: center;
+        margin-top: 0 !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        
+    }
+    
+
+    .titulo{
+        margin-top: 50px;
+    }
+}
+
+div, h2{
+    color:#fff;
+}
+
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    list-style:none;
+    text-decoration:none;
+}
+
+.vector{
+    margin-top:100px;
+    width:100%;
+    max-width: 500px;
+    min-width: 300px;
+}

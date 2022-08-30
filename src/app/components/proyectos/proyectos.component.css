@@ -1,0 +1,90 @@
+.proyectos{
+    display: grid;
+    grid-template-areas: 
+    "proyectotexto proyectofoto";
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr minmax(300px, 1fr);
+}
+.proyectotexto{
+    grid-area: proyectotexto;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-top:100px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.proyectofoto{
+    grid-area: proyectofoto;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin-right: 30px;
+    margin-bottom: -50px;
+}
+
+@media(max-width: 1199px){
+    .proyectos {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .vector{
+        display: flex !important;
+        object-fit:cover;
+        margin-top: 0 !important;
+        width: 250px !important;
+
+    }
+    .proyectotexto{
+        grid-area: proyectotexto;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        padding-bottom: 50px;
+ 
+
+    }
+    .proyectofoto{
+        grid-area: proyectofoto;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        margin-right: 0 !important;
+    }
+    .titulo{
+        margin-top: 50px;
+    }
+}
+
+div, h2{
+    color:#fff;
+}
+.proyectosubtitulo{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+ul{
+    list-style:none;
+    text-decoration:none;
+}
+
+.vector{
+    width:90%;
+    max-width: 500px;
+    min-width: 300px;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.82);
+}
+
+
+

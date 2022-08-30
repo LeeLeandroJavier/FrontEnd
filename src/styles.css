@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    background: rgb(3,0,74);
+    background: linear-gradient(90deg, rgba(3,0,74,1) 0%, rgba(52,52,186,1) 51%, rgba(3,0,74,1) 100%);
+}
+
+.titulo{
+    color:#fff;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.subtitulo{
+    padding-right:25px;
+}
+
+.seccion {
+    min-height: 900px;
+}
+
+.editar{
+    fill:#fff;
+}
+
+.editar:hover .editarlapiz{
+    fill: yellow;
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+
+.editar:hover .editartacho{
+    fill:red;
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+.editar:hover .editaragregar{
+    fill:greenyellow;
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}
+.agregar{
+    padding-bottom: 5px;
+}
+.agregar:hover{
+    transform:scale(1.05);
+    transition: 0.3s ease-in-out;
+    transform:scale(1.10);
+    cursor: pointer;
+}

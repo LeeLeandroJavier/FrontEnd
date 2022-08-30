@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+        <img src="../../../assets/APLogo.png" id="logoAP" alt="">
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="navbar collapse in navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link">Experiencia</a>
+          <a href="#" class="nav-item nav-link">Educación</a>
+          <a href="#" class="nav-item nav-link">Habilidades</a>
+          <a href="#" class="nav-item nav-link">Proyectos</a>
+        </div>
+        <div class="redes">
+          <a href=""><img src="../../../assets/linkedin.png" alt=""></a>
+          <a href=""><img src="../../../assets/twitter.png" alt=""></a>
+          <a href=""><img src="../../../assets/instagram.png" alt=""></a>
+          <a href=""><img src="../../../assets/github.png" alt=""></a>
+          <a href=""><img src="../../../assets/facebook.png" alt=""></a>
+          <button type="button" class="btn btn-outline-light login" (click)="login()" *ngIf= "!isLogged">Login</button>
+          <button type="button" class="btn btn-outline-light login" (click)="onLogOut()" *ngIf ="isLogged">Logout</button>
+        </div>
+      </div>
+    </div>
+  </nav>
