@@ -27,6 +27,11 @@ export class HeaderComponent implements OnInit {
   login(){
     this.router.navigate(['/login'])
   }
+
+  scroll(number:number){
+    window.scrollTo(0, number*window.innerHeight)
+  }
+
 }
 
 

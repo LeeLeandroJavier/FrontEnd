@@ -37,7 +37,6 @@ div{
         font-family: 'Prompt', sans-serif;
         font-size:20px;
     }
-    
 }
 
 #nombre{
@@ -72,4 +71,8 @@ div{
     font-size: 55px;
     font-weight: bold;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+.container{
+    min-height: 45vh;
 }
